@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: order-service
+
+  datasource:
+    url: ${ORDER_DB_URL:jdbc:mysql://localhost:3306/order_service}
+    username: ${ORDER_DB_USER:order_user}
+    password: ${ORDER_DB_PASSWORD:order_pass}
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs
+
+inventory:
+  url: http://localhost:8084
+
+server:
+  port: 8085
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
