@@ -1,0 +1,9 @@
+.git
+.idea
+.cursor
+**/target
+**/.DS_Store
+**/*.iml
+infra/mysql/data
+api-gateway/volume-data
+product-service/.data

@@ -1,0 +1,6 @@
+.cursor/
+.env
+**/target/
+infra/mysql/data/
+api-gateway/volume-data/
+product-service/.data/
